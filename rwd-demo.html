@@ -2,11 +2,12 @@
 <html>
 <head>  
   <title>My First Web Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="demo.css">
 </head> 	
 <body>
   <div id="container">
-    <header style="font-size: 60px; color: #fff;">My Web Site Brand</header>
+    <header style="font-size: 60px; color: #fff;">My Website Brand</header>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -19,16 +20,30 @@
       <div class="viewport">
         <p>For verification purpose:</p>
         <p>Current viewport size is <span id="viewportSize"></span>, which should have <span id="viewportType"></span> display. Breakpoint is <span id="bp"></span>.</p>
-        <p></p>
+        <p>Desktop Display:<br>- Cards are displayed in 2 columns no matter how the viewport is resized.</p>
+        <p>Mobile Display:<br>- Cards are stacked in 1 column.</p>
+        <p>Other Requirements:<br>- Background pictures and cards should be resized smoothly as the viewport is resized.<br>- Page title has a text-wrap effect.</p>
+        <hr>
       </div>
+      <h1>My First Heading</h1>
+      <h2>Cards:</h2>
       <div class="cards">
-        <div class="card">
-          <h1>My First Heading</h1>
-          <p>My first paragraph.</p>
+        <div class="card"> 
+          <p>Card 1</p>
+          <img src="images/east-village.jpg" alt="East Village">
         </div>
-          <div class="card"> 
-            <img src="images/east-village.jpg" alt="East Village" width="400">
-          </div>
+        <div class="card">
+          <p>Card 2</p>
+          <img src="images/east-village.jpg" alt="East Village">
+        </div>
+        <div class="card"> 
+          <p>Card 3</p>
+          <img src="images/east-village.jpg" alt="East Village">
+        </div>
+        <div class="card"> 
+          <p>Card 4</p>
+          <img src="images/east-village.jpg" alt="East Village">
+        </div>
       </div>
     </main>
     <footer>&copy; Copyright 2021</footer>
